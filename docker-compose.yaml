@@ -1,8 +1,8 @@
 version: '3.7'
 services:
   Service1:
-    build: ./Service1/application
-    image: marti/Service1:latest
+    build: ./application
+    image: marti/service1:latest
     container_name: Service1
     ports:
     - target: 5000
@@ -10,8 +10,8 @@ services:
       protocol: tcp
 
   Service2:
-    build: ./Service2/application
-    image: marti/Service2:latest
+    build: ./application
+    image: marti/service2:latest
     container_name: Service2
     ports:
     - target: 5001
@@ -19,8 +19,8 @@ services:
       protocol: tcp
 
   Service3:
-    build: ./Service3/application
-    image: marti/Service3:latest
+    build: ./application
+    image: marti/service3:latest
     container_name: Service3
     ports:
     - target: 5002
@@ -28,8 +28,8 @@ services:
       protocol: tcp
 
   Service4:
-    build: ./Service4/application
-    image: marti/Service4:latest
+    build: ./application
+    image: marti/service4:latest
     container_name: Service4
     ports:
     - target: 5003
