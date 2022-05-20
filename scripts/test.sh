@@ -12,7 +12,7 @@ python3 -m pytest --cov .
 
 cd .. 
 
-cd service_3/
+cd Service3/
 pip3 install -r requirements.txt
 python3 -m pytest --cov .
 
