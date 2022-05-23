@@ -1,6 +1,17 @@
-from flask import Flask
 
+
+from flask import Flask, Response, request
+import random
 app = Flask(__name__)
 
-from application import routes
 
+
+
+@app.route('/planet', methods=['GET'])
+def planet():
+    planets = ["Tatooine", "Coruscant", "Kamino", "Ryloth", "Shili", "Kashyyyk", "Bespin", "Dagobah", "Naboo", "Hoth"]
+    return Response(random.choices(planets), mimetype="text/plain")
+
+
+if __name__ =="__main__":
+    app.run(debug=True, host='0.0.0.0', port=5002)

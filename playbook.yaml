@@ -1,14 +1,19 @@
-- hosts: all
-  become: yes
-  roles:
-  - common
+
 
 - hosts: managers
-  become: yes
+  become: true
   roles:
+  - docker
   - manager
   
 - hosts: workers
-  become: yes
+  become: true
   roles:
   - worker
+  - docker
+
+- hosts: managers
+  become: true
+  roles:
+  - managerclonerepo
+  - stackdeploy

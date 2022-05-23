@@ -2,8 +2,7 @@ version: '3.7'
 services:
   Service1:
     build: ./Service1/application
-    image: marti/Service1:latest
-    container_name: Service1
+    image: 21032001/service1:latest
     ports:
     - target: 5000
       published: 5000
@@ -11,8 +10,7 @@ services:
 
   Service2:
     build: ./Service2/application
-    image: marti/Service2:latest
-    container_name: Service2
+    image: 21032001/service2:latest
     ports:
     - target: 5001
       published: 5001
@@ -20,8 +18,7 @@ services:
 
   Service3:
     build: ./Service3/application
-    image: marti/Service3:latest
-    container_name: Service3
+    image: 21032001/service3:latest
     ports:
     - target: 5002
       published: 5002
@@ -29,8 +26,7 @@ services:
 
   Service4:
     build: ./Service4/application
-    image: marti/Service4:latest
-    container_name: Service4
+    image: 21032001/service4:latest
     ports:
     - target: 5003
       published: 5003
