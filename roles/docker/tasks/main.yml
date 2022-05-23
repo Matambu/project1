@@ -36,11 +36,6 @@
     name: docker
   register: docker_info
 
-- name: Install Docker SDK
-  pip:
-    name: docker
-    executable: pip3
-
 - name: 'Install Jsondiff'
   pip:
     name: jsondiff
