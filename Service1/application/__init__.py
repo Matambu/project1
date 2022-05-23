@@ -9,9 +9,9 @@ app = Flask(__name__)
 
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    name = requests.get('http://localhost:5001/name').text
-    planets = requests.get('http://localhost:5002/planet').text
-    databank = requests.post("http://localhost:5003/databank")
+    name = requests.get('http://Service2:5001/name').text
+    planets = requests.get('http://Service3:5002/planet').text
+    databank = requests.post("http://Service4:5003/databank")
     return render_template('index.html', name=name, planets=planets, databank=databank)
 
 if __name__ == '__main__':
