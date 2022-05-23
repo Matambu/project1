@@ -33,4 +33,7 @@ I made 3 new Virtual Machines to work with forr the project:
 - Worker
 - NGINX
 
-On the Jenkins machine, I used a script to install Jenkins. Once that was complete and set up, I gave jenkins sudo permissions by using sudo visudo and as the jenkins user I installed docker and docker-compose, still as the jenkins user I then generated keys using ssh-keygen -t rsa. I then placed the public key from the jenkins user on the jenkins machine into the Manager and Worker VMs. Once the other two (Manager, Worker) machines where created I used the jenkins machine to ssh into them. I also, still as the jenkins user, did docker login to provide my dockerhub username and password. Then through the jenkins app on port 8080 I set up a webhook for my git repository and enabled it on git, this allows for a rolling update. 
+On the Jenkins machine, I used a script to install Jenkins. Next, I used sudo visudo to give Jenkins sudo permissions. As the jenkins user, I installed docker and docker-compose, then generated keys using ssh-keygen -t rsa. I copied and pasted the public key from the jenkins user on the jenkins machine into the Manager and Worker VMs. Once the other two (Manager, Worker) machines where created I used the jenkins machine to ssh into them. Then through the jenkins app on port 8080 I set up a webhook for my git repository and enabled it on git, this allows for a rolling update. 
+
+# GCP
+I first spun up a virtual machine on GCP with the purpose of creating the app, placing my local machines public key in, I then SSH through VSC to my VM and clone this GIT repository and create services. Once all the services are complete and the app is working successfully push to Github. I then create a new VM to be my jenkins machine.
