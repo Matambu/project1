@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 @app.route('/planet', methods=['GET'])
 def planet():
-    planets = ["Tatooine", "Coruscant", "Kamino", "Ryloth", "Shili", "Kashyyyk", "Bespin", "Dagobah", "Naboo", "Hoth"]
+    planets = ["Tatooine", "Coruscant", "Kamino", "Ryloth", "Shili"]
+    randplanet = random.randint(0,4)
     return Response(random.choices(planets), mimetype="text/plain")
 
 
