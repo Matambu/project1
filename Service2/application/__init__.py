@@ -10,7 +10,8 @@ app = Flask(__name__)
 
 @app.route('/name', methods=['GET'])
 def name():
-    names = ["Cal Kestis", "Kylo Ren", "Grand Inquisitor", "Ahsoka Tano", "Shaak-Ti", "Galen Marek", "Darth Bane", "Bail Organa", "R2-D2", "Obi-Wan Kenobi"]
+    names = ["Cal Kestis", "Kylo Ren", "Grand Inquisitor", "Ahsoka Tano", "Shaak-Ti"]
+    randname = random.randint(0,4)
     return Response(random.choices(names), mimetype='text/plain')
 
 if __name__ =="__main__":

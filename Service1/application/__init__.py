@@ -11,8 +11,9 @@ app = Flask(__name__)
 def index():
     name = requests.get('http://Service2:5001/name').text
     planets = requests.get('http://Service3:5002/planet').text
-    databank = requests.post("http://Service4:5003/databank")
-    return render_template('index.html', name=name, planets=planets, databank=databank)
+    generate = planets + '-' + name
+    home = requests.post("http://Service4:5003/databank", data=generate).text
+    return render_template('index.html', name=name, planets=planets, home=home)
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True, host = '0.0.0.0')

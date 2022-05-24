@@ -30,12 +30,6 @@ class TestName(TestBase):
             self.assertIn(b'Shaak-Ti', response.data)
 
 
-    def test_obiwan(self):
-        with patch('random.choices') as r:
-            r.return_value = 3
-            response = self.client.get(url_for('name'))
-            self.assertIn(b'Obi-Wan Kenobi', response.data)
-
     def test_grandinquisitor(self):
         with patch('random.choices') as r:
             r.return_value = 4
