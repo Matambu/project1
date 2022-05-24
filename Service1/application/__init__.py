@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 
-
+@app.route('/', methods =['GET'])
 @app.route('/index', methods=['GET', 'POST'])
 def index():
     name = requests.get('http://Service2:5001/name').text
