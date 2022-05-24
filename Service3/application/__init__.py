@@ -11,7 +11,7 @@ app = Flask(__name__)
 def planet():
     planets = ["Tatooine", "Coruscant", "Kamino", "Ryloth", "Shili"]
     randplanet = random.randint(0,4)
-    return Response(random.choices(planets), mimetype="text/plain")
+    return Response(planets[randplanet], mimetype="text/plain")
 
 
 if __name__ =="__main__":
