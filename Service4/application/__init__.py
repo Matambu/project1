@@ -16,7 +16,7 @@ def databank():
         home = "Home of Clones"
     elif planet_name[1] == "Cal Kestis" and planet_name[0] == "Ryloth":
         home = "Home of Twilek"
-    elif planet_name[1] == "Cal Kestis" and planet_name[0] == "Shilli":
+    elif planet_name[1] == "Cal Kestis" and planet_name[0] == "Shili":
         home = "Home of Ahsoka"
     elif planet_name[1] == "Kylo Ren" and planet_name[0] == "Tatooine":
         home = "Home of Uncle"
@@ -26,7 +26,7 @@ def databank():
         home = "Home of The Clones"
     elif planet_name[1] == "Kylo Ren" and planet_name[0] == "Ryloth":
         home = "Home of The Twilek"
-    elif planet_name[1] == "Kylo Ren" and planet_name[0] == "Shilli":
+    elif planet_name[1] == "Kylo Ren" and planet_name[0] == "Shili":
         home = "Home of Ahsoka"
     elif planet_name[1] == "Grand Inquisitor" and planet_name[0] == "Kamino":
         home = "Home of The Clones"
@@ -36,17 +36,15 @@ def databank():
         home = "Home of The Senate"
     elif planet_name[1] == "Grand Inquisitor" and planet_name[0] == "Ryloth":
         home = "Home of The Twilek"
-    elif planet_name[1] == "Grand Inquisitor" and planet_name[0] == "Shilli":
+    elif planet_name[1] == "Grand Inquisitor" and planet_name[0] == "Shili":
         home = "Home of Ahsoka"
     elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Ryloth":
         home = "Home of The Twilek"
     elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Tatooine":
         home = "Home of The Skywalker"
-    elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Ryloth":
-        home = "Home of The Twilek"
     elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Coruscant":
         home = "Home of The Senate"
-    elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Shilli":
+    elif planet_name[1] == "Ahsoka Tano" and planet_name[0] == "Shili":
         home = "Home of Ahsoka"
     elif planet_name[1] == "Shaak-Ti" and planet_name[0] == "Shilli":
         home = "Home of Ahsoka"
